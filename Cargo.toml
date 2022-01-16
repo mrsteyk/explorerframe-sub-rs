@@ -1,0 +1,17 @@
+[package]
+name = "explorerframe-sub-rs"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+detour = "0.8"
+skidscan = "2.0"
+
+[dependencies.winapi]
+version = "0.3"
+features = ["ntdef", "winnt", "shellapi", "minwindef", "libloaderapi", "winuser", "winreg", "impl-debug"]
